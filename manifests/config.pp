@@ -1,6 +1,6 @@
 class fail2ban::config {
 
-    # # do package before config
+    ## do package before config
     # Users::Account["${fail2ban::user}"] -> Class['fail2ban::package']
 
     # users::account { $fail2ban::user:

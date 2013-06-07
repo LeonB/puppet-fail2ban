@@ -14,12 +14,12 @@
 #
 class fail2ban::params {
 
-	### Application related parameters
+  ### Application related parameters
 
-	$packages = $::operatingsystem ? {
-		default => ['fail2ban', 'python-pyinotify']
-	}
+  $packages = $::operatingsystem ? {
+    default => ['fail2ban', 'python-pyinotify']
+  }
 
-	$enabled = true
+  $enabled = true
 
 }
